@@ -1,0 +1,21 @@
+<p>
+  reactivefroms works!
+</p>
+  <form [formGroup]="rHobbyForm" (ngSubmit)="addHobby(rHobbyForm.value)">
+  
+    First Name:<input type="text"  formControlName="fname">
+    {{fname}}
+    <br>
+    Last Name:<input type="text" formControlName="Sname">
+    {{Sname}}
+    <br>
+    <select name ="hobby" formControlName="SSName">
+  <option value="Swimming">Swimming</option>
+  <option value="gg">gg</option>
+  <option value="Swigggmming">Swiggmming</option>
+  <option value="ggg">ggg</option>
+    </select>   
+    {{SSName}}
+    <br>
+    <button type="submit">Add Hobby</button>
+  </form>
